@@ -26,7 +26,7 @@ choad to elastyczny, oparty na Perlu, dzia³aj±cy z linii poleceñ
 frontend do bazy danych CDDB, rippera CD cdparanoia i kodera MP3 LAME.
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{version}2
 %patch0 -p1
 
 %install
