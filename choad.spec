@@ -7,6 +7,7 @@ Release:	1
 License:	Artistic
 Group:		Applications/Sound
 Source0:	http://www.ftso.org/choad/%{name}.tgz
+# Source0-md5:	62512e3e688f98ae20fd043e8ff2194e
 Patch0:		%{name}-perldir.patch
 URL:		http://www.ftso.org/choad/
 BuildRequires:	perl-CDDB
