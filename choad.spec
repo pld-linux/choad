@@ -6,8 +6,6 @@ Version:	0.82
 Release:	1
 License:	Artistic
 Group:		Applications/Console
-Group(de):	Applikationen/Konsole
-Group(pl):	Aplikacje/Konsola
 Source0:	http://www.ftso.org/choad/%{name}.tgz
 Patch0:		%{name}-perldir.patch
 URL:		http://www.ftso.org/choad/
