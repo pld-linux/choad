@@ -30,7 +30,7 @@ frontend do bazy danych CDDB, rippera CD cdparanoia i kodera MP3 LAME.
 %patch0 -p1
 
 %build
-gzip -9nf README 
+gzip -9nf README
 
 %install
 rm -rf $RPM_BUILD_ROOT
