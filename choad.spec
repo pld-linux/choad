@@ -2,7 +2,7 @@
 Summary:	Automatic mp3 ripper
 Summary(pl):	Automatyczny ripper mp3
 Name:		choad
-Version:	0.82
+Version:	0.822
 Release:	1
 License:	Artistic
 Group:		Applications/Sound
@@ -26,7 +26,7 @@ choad to elastyczny, oparty na Perlu, dzia³aj±cy z linii poleceñ
 frontend do bazy danych CDDB, rippera CD cdparanoia i kodera MP3 LAME.
 
 %prep
-%setup -q -n %{name}-%{version}2
+%setup -q
 %patch0 -p1
 
 %install
@@ -40,4 +40,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/choad
-%doc README
+%doc README.1ST README.2ND
