@@ -1,0 +1,9 @@
+diff -Nru choad-0.82.orig/choad choad-0.82/choad
+--- choad-0.82.orig/choad	Fri Aug 31 16:19:19 2001
++++ choad-0.82/choad	Fri Aug 31 16:27:22 2001
+@@ -1,4 +1,4 @@
+-#!/usr/pkg/bin/perl
++#!/usr/bin/perl
+ #
+ # choad
+ # 
