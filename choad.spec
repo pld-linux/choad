@@ -1,5 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Automatic mp3 ripper
+Summary(pl):	Automatyczny ripper mp3
 Name:		choad
 Version:	0.82
 Release:	1
@@ -9,17 +10,22 @@ Group(de):	Applikationen/Konsole
 Group(pl):	Aplikacje/Konsola
 Source0:	http://www.ftso.org/choad/%{name}.tgz
 Patch0:		%{name}-perldir.patch
-Requires:	perl-CDDB
+URL:		http://www.ftso.org/choad/
+BuildRequires:	rpm-perlprov
+BuildRequires:	perl-CDDB
 Requires:	cdparanoia-III
 Requires:	lame
-BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-URL:		http://www.ftso.org/choad/
+BuildArch:	noarch
 
 %description
 Choad is a flexible, Perl-based command-line frontend to the CDDB
 database (via CDDB.pl), the cdparanoia CD ripper, and the LAME MP3
 encoder.
+
+%description -l pl
+choad to elastyczny, oparty na Perlu, dzia³aj±cy z linii poleceñ
+frontend do bazy danych CDDB, rippera CD cdparanoia i kodera MP3 LAME.
 
 %prep
 %setup -q
