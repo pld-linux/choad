@@ -5,12 +5,12 @@ Name:		choad
 Version:	0.82
 Release:	1
 License:	Artistic
-Group:		Applications/Console
+Group:		Applications/Sound
 Source0:	http://www.ftso.org/choad/%{name}.tgz
 Patch0:		%{name}-perldir.patch
 URL:		http://www.ftso.org/choad/
-BuildRequires:	rpm-perlprov
 BuildRequires:	perl-CDDB
+BuildRequires:	rpm-perlprov
 Requires:	cdparanoia-III
 Requires:	lame
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -28,8 +28,6 @@ frontend do bazy danych CDDB, rippera CD cdparanoia i kodera MP3 LAME.
 %prep
 %setup -q
 %patch0 -p1
-
-%build
 
 %install
 rm -rf $RPM_BUILD_ROOT
