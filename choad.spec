@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	Automatic mp3 ripper
-Summary(pl):	Automatyczny ripper mp3
+Summary:	Automatic MP3 ripper
+Summary(pl):	Automatyczny ripper MP3
 Name:		choad
 Version:	0.822
 Release:	1
