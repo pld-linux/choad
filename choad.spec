@@ -14,8 +14,8 @@ BuildRequires:	perl-CDDB
 BuildRequires:	rpm-perlprov
 Requires:	cdparanoia-III
 Requires:	lame
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Choad is a flexible, Perl-based command-line frontend to the CDDB
@@ -32,6 +32,7 @@ frontend do bazy danych CDDB, rippera CD cdparanoia i kodera MP3 LAME.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 install -d $RPM_BUILD_ROOT%{_bindir}
 install choad $RPM_BUILD_ROOT%{_bindir}
 
@@ -40,5 +41,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/choad
 %doc README.1ST README.2ND
+%attr(755,root,root) %{_bindir}/choad
