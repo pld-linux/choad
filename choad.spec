@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.perl
 Summary:	Automatic MP3 ripper
 Summary(pl.UTF-8):	Automatyczny ripper MP3
 Name:		choad
